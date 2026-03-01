@@ -1,12 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty Landing</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beauty Studio — запись в Telegram</title>
+  <meta name="description" content="Современный landing page для салона красоты. Запись в Telegram, услуги, отзывы и контакты." />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-<h1>Beauty Landing работает ✅</h1>
-<p>Мой первый сайт на GitHub Pages</p>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Beauty Studio</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a class="nav-cta" href="#contact">Запись</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="kicker">✨ Запись за 1 минуту</div>
+        <h1>Салон красоты <span class="accent">Beauty Studio</span></h1>
+        <p class="lead">
+          Аккуратные процедуры, чистота и комфорт. Подберём услугу под ваш запрос — и запишем вас в удобное время.
+        </p>
+
+        <div class="hero-actions">
+          <!-- ВАЖНО: замени ссылку на свой Telegram -->
+          <a class="btn primary" id="tgBtn" href="https://t.me/USERNAME" target="_blank" rel="noopener">
+            Записаться в Telegram
+          </a>
+          <a class="btn ghost" href="#services">Смотреть услуги</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">🕒 60 мин</div>
+          <div class="badge">✨ Аккуратно</div>
+          <div class="badge">🧴 Премиум уход</div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-title">Быстрый прайс</div>
+        <div class="price-list">
+          <div class="row"><span>Услуга №1</span><span>от 2400₽</span></div>
+          <div class="row"><span>Услуга №2</span><span>от 1900₽</span></div>
+          <div class="row"><span>Услуга №3</span><span>от 3200₽</span></div>
+        </div>
+        <div class="card-note">Точную стоимость уточним в Telegram по вашему запросу.</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>Обо мне</h2>
+      <div class="about">
+        <div class="avatar" aria-hidden="true">BS</div>
+        <div>
+          <p>
+            Меня зовут <b>Дарья Погосян</b>. Я мастер бьюти-сферы. Работаю аккуратно, соблюдаю чистоту и
+            подбираю уход под ваши цели.
+          </p>
+          <p class="muted">
+            (Текст можно заменить на ваш — он уже красиво оформлен.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Услуги</h2>
+      <div class="grid">
+        <article class="service">
+          <div class="service-title">Услуга №1</div>
+          <p class="muted">Короткое описание: что делаем и какой результат получите.</p>
+          <div class="tags">
+            <span class="tag">60 мин</span>
+            <span class="tag">аккуратно</span>
+            <span class="tag">уход</span>
+          </div>
+          <div class="service-footer">
+            <span class="price">от 2400₽</span>
+            <a class="link" href="#contact">Записаться →</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-title">Услуга №2</div>
+          <p class="muted">Короткое описание: подходит для кого, какие ощущения и эффект.</p>
+          <div class="tags">
+            <span class="tag">45–60 мин</span>
+            <span class="tag">бережно</span>
+            <span class="tag">комфорт</span>
+          </div>
+          <div class="service-footer">
+            <span class="price">от 1900₽</span>
+            <a class="link" href="#contact">Записаться →</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-title">Услуга №3</div>
+          <p class="muted">Короткое описание: для какого случая, как подготовиться.</p>
+          <div class="tags">
+            <span class="tag">70 мин</span>
+            <span class="tag">премиум</span>
+            <span class="tag">результат</span>
+          </div>
+          <div class="service-footer">
+            <span class="price">от 3200₽</span>
+            <a class="link" href="#contact">Записаться →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <h2>Отзывы</h2>
+      <div class="grid reviews">
+        <figure class="review">
+          <blockquote>«Очень аккуратно и красиво! Результат супер, обязательно приду снова.»</blockquote>
+          <figcaption>— Анна</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>«Чисто, комфортно, мастер внимательная. Всё объяснила и помогла выбрать.»</blockquote>
+          <figcaption>— Мария</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>«Запись быстрая, всё по времени. Эффект заметен сразу.»</blockquote>
+          <figcaption>— Екатерина</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Контакты и запись</h2>
+      <div class="contact">
+        <div class="contact-card">
+          <div class="contact-title">Запишитесь в Telegram</div>
+          <p class="muted">
+            Нажмите кнопку — откроется чат. Напишите: услуга + желаемая дата/время.
+          </p>
+
+          <a class="btn primary full" id="tgBtn2" href="https://t.me/USERNAME" target="_blank" rel="noopener">
+            Открыть Telegram и записаться
+          </a>
+
+          <p class="tiny muted">
+            Если Telegram не установлен — откроется веб-версия.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-title">Быстрый запрос</div>
+          <form id="quickForm">
+            <label class="field">
+              <span>Ваше имя</span>
+              <input type="text" name="name" placeholder="Например: Алина" required />
+            </label>
+            <label class="field">
+              <span>Что хотите</span>
+              <input type="text" name="service" placeholder="Например: Услуга №2" required />
+            </label>
+            <label class="field">
+              <span>Желаемая дата/время</span>
+              <input type="text" name="time" placeholder="Например: завтра 18:00" />
+            </label>
+            <button class="btn ghost full" type="submit">Скопировать текст для Telegram</button>
+            <p class="tiny muted" id="copyHint" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Beauty Studio</span>
+    <a class="footer-link" href="#top">Наверх ↑</a>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
